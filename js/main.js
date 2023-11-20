@@ -60,13 +60,16 @@ function paritarium(){
 // Somma numeri
 
 
+
 function sommarium(){
     alert("Inserisci i tuoi 10 numeri");
 let arrayNumbers = generateArrayOfNumbers(10);
 
-let sumOfNubers = sumOfArrayNumbers(array, array.length);
 
-let theArithmeticAverage = arithmeticAverage(sum, array.length);
+let sumOfNubers = sumOfArrayNumbers(arrayNumbers, arrayNumbers.length);
+
+
+let theArithmeticAverage = arithmeticAverage(sumOfNubers, arrayNumbers.length);
 
 alert("La somma dei tuoi numeri è :" + sumOfNubers);
 alert("La media aritmetica dei tuoi numeri è:" + theArithmeticAverage);
@@ -101,7 +104,7 @@ function generateRandomNumber(min, max) {
 //generare array con numeri scelti
 
 function generateArrayOfNumbers(totalNumbers) {
-    array = [];
+    let array = [];
 
     //  Dichiaro un ciclo for per ripetere n volte la scelta del numero
     //  e l'inserimento del numero nel vettore
@@ -118,13 +121,13 @@ function generateArrayOfNumbers(totalNumbers) {
 //sommatore di numeri
 
 function sumOfArrayNumbers (arrayName, arrayLenght){
-    sum = 0;
+    let sum = 0;
     for (i=0; i< arrayLenght; i++){
         sum = sum + arrayName[i];
     }
 
     console.log(sum);
-    
+
     return sum;
 }
 
