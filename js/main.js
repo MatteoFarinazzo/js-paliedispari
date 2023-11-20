@@ -59,6 +59,18 @@ function paritarium(){
 
 // Somma numeri
 
+alert("Inserisci i tuoi 10 numeri");
+let arrayNumbers = generateArrayOfNumbers(5);
+
+
+let sumOfNubers = sumOfArrayNumbers(array, array.length);
+
+let theArithmeticAverage = arithmeticAverage(sum, array.length);
+
+
+
+
+
 
 //Funzioni
 
@@ -78,3 +90,45 @@ function generateRandomNumber(min, max) {
     let randomNumber = Math.floor(Math.random() * (max - min) + min);
     return randomNumber;
 }
+
+
+
+//generare array con numeri scelti
+
+function generateArrayOfNumbers(totalNumbers) {
+    array = [];
+
+    //  Dichiaro un ciclo for per ripetere n volte la scelta del numero
+    //  e l'inserimento del numero nel vettore
+    for (let i = 0; i < totalNumbers; i++) {
+        let choiceNumber = prompt("Inserisci il" + (i+1) + "°" + "numero" );
+        choiceNumber = parseInt(choiceNumber);
+        array.push(choiceNumber);
+    }
+
+    return array;
+}
+
+//sommatore di numeri
+
+function sumOfArrayNumbers (arrayName, arrayLenght){
+    sum = 0;
+    for (i=0; i< arrayLenght; i++){
+        sum = sum + arrayName[i];
+    }
+
+    console.log(sum);
+}
+
+//media aritmetica
+
+function arithmeticAverage (sum, arrayLenght){
+    let resultArithmeticAverage;
+    resultArithmeticAverage = sum / arrayLenght;
+
+    console.log(resultArithmeticAverage);
+
+}
+
+
+
