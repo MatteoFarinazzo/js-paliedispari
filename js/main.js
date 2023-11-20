@@ -124,6 +124,8 @@ function sumOfArrayNumbers (arrayName, arrayLenght){
     }
 
     console.log(sum);
+    
+    return sum;
 }
 
 
@@ -134,6 +136,8 @@ function arithmeticAverage (sum, arrayLenght){
     resultArithmeticAverage = sum / arrayLenght;
 
     console.log(resultArithmeticAverage);
+
+    return resultArithmeticAverage;
 }
 
 
