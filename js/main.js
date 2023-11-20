@@ -59,7 +59,9 @@ function paritarium(){
 
 // Somma numeri
 
-alert("Inserisci i tuoi 10 numeri");
+
+function sommarium(){
+    alert("Inserisci i tuoi 10 numeri");
 let arrayNumbers = generateArrayOfNumbers(10);
 
 let sumOfNubers = sumOfArrayNumbers(array, array.length);
@@ -68,6 +70,7 @@ let theArithmeticAverage = arithmeticAverage(sum, array.length);
 
 alert("La somma dei tuoi numeri è :" + sumOfNubers);
 alert("La media aritmetica dei tuoi numeri è:" + theArithmeticAverage);
+}
 
 
 
